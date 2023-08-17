@@ -1,5 +1,5 @@
 require 'faraday'
-require 'faraday_middleware'
+require 'faraday/multipart'
 
 require 'garage_client/version'
 require 'garage_client/cachers/base'
@@ -11,6 +11,7 @@ require 'garage_client/request/propagate_request_id'
 require 'garage_client/response'
 require 'garage_client/response/cacheable'
 require 'garage_client/response/raise_http_exception'
+require 'garage_client/response/mashify'
 require 'garage_client/resource'
 require 'garage_client/client'
 
